@@ -5,7 +5,11 @@ namespace service.Data
 {
     public class DictionaryContext : DbContext
     {
+        public DictionaryContext(DbContextOptions<DictionaryContext> options) : base(options)
+        { }
+
         public DbSet<Word> Words { get; set; }
+
         public DbSet<WordTranslated> WordTranslateds { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
