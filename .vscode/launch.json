@@ -11,7 +11,7 @@
       "preLaunchTask": "service build",
       "program": "${workspaceFolder}/src/service/bin/Debug/net5.0/service.dll",
       "args": [],
-      "cwd": "${workspaceFolder}",
+      "cwd": "${workspaceFolder}/src/service/bin/Debug/net5.0",
       "stopAtEntry": false,
       "env": {
         "ASPNETCORE_ENVIRONMENT": "Development"
